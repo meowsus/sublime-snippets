@@ -1,0 +1,27 @@
+<snippet>
+  <tabTrigger>weblinc</tabTrigger>
+  <content><![CDATA[WEBLINC.${1:moduleName} = (function () {
+    'use strict';
+
+    var init = function (\$scope) {
+            var \$${2:collection} = \$('${3:.class}', \$scope);
+
+            if (_.isEmpty(\$${2:collection})) { return; }
+
+            ${4:// start here}
+        };
+
+    WEBLINC.modules.onDomReady(init);
+    WEBLINC.modules.onDomUpdate(init);
+
+    return {
+        init: init
+    };
+}());
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <!-- <tabTrigger>hello</tabTrigger> -->
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

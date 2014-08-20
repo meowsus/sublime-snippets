@@ -1,0 +1,31 @@
+<snippet>
+  <content><![CDATA[
+// ===============================================
+// ${1:component-name} (for @include)
+// ===============================================
+
+@mixin ${1:component-name} {
+  ${2:// do it}
+}
+
+// ===============================================
+// ${1:component-name} (for @extend)
+// ===============================================
+
+%${1:component-name} {
+  @include ${1:component-name};
+}
+
+// ===============================================
+// ${1:component-name} (class selector)
+// ===============================================
+
+.${1:component-name} {
+  @extend %${1:component-name};
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>component</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.scss</scope>
+</snippet>
