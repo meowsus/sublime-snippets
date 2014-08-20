@@ -1,0 +1,4 @@
+'.source.scss':
+  'Creates a component':
+    'prefix': 'component'
+    'body': '// ===============================================\n// ${1:component-name} (for @include)\n// ===============================================\n\n@mixin ${1:component-name} {\n  ${2:// do it}\n}\n\n// ===============================================\n// ${1:component-name} (for @extend)\n// ===============================================\n\n%${1:component-name} {\n  @include ${1:component-name};\n}\n\n// ===============================================\n// ${1:component-name} (class selector)\n// ===============================================\n\n.${1:component-name} {\n  @extend %${1:component-name};\n}'
