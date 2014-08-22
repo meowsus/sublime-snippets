@@ -1,0 +1,4 @@
+'.source.js':
+  '':
+    'prefix': 'weblinc'
+    'body': 'WEBLINC.${1:moduleName} = (function () {\n    \'use strict\';\n\n    var init = function (\$scope) {\n            var \\$${2:collection} = \\$(\'${3:.class}\', \\$scope);\n\n            if (_.isEmpty(\\$${2:collection})) { return; }\n\n            ${4:// start here}\n        };\n\n    WEBLINC.modules.onDomReady(init);\n    WEBLINC.modules.onDomUpdate(init);\n\n    return {\n        init: init\n    };\n}());'

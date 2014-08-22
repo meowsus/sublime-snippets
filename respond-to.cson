@@ -1,0 +1,4 @@
+'.source.scss':
+  'Creates a respond-to mixin':
+    'prefix': 'respond'
+    'body': '@include respond-to(\$${1:medium}-breakpoint) {\n  ${2:// do it}\n}'
